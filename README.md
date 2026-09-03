@@ -113,5 +113,3 @@ In the console, the application provides us with options to add, view, update, a
 - Dirty Checking
 - MySQL Integration
 - Maven
-
-## Future Improvement
