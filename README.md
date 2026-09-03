@@ -22,6 +22,7 @@ A Java-based Employee Management System built using **Java, Hibernate ORM, MySQL
 
 ## Project Structure
 
+````text
 EmployeeManagementSystem/
 │
 ├── src/
@@ -41,7 +42,7 @@ EmployeeManagementSystem/
 ├── .gitignore
 ├── pom.xml
 └── README.md
-
+````
 ## How to Run
 
 ### Prerequisites
