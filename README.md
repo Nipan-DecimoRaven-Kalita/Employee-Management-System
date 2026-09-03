@@ -8,7 +8,7 @@ A Java-based Employee Management System built using **Java, Hibernate ORM, MySQL
 - View Employee
 - Update Employee
 - Delete Employee
-- Console-based, menu-driven interface
+- Console-based menu-driven interface
 - MySQL database integration using Hibernate
 
 ## Technologies Used
@@ -22,7 +22,7 @@ A Java-based Employee Management System built using **Java, Hibernate ORM, MySQL
 
 ## Project Structure
 
-````text
+```text
 EmployeeManagementSystem/
 │
 ├── src/
@@ -42,7 +42,8 @@ EmployeeManagementSystem/
 ├── .gitignore
 ├── pom.xml
 └── README.md
-````
+```
+
 ## How to Run
 
 ### Prerequisites
@@ -56,9 +57,19 @@ EmployeeManagementSystem/
 
 Create the database in MySQL:
 
-1. CREATE DATABASE companyDB;
-2. Update the MySQL username and password in: src/main/resources/hibernate.cfg.xml
+```sql
+CREATE DATABASE companyDB;
+```
+
+Update the MySQL username and password in:
+
+```text
+src/main/resources/hibernate.cfg.xml
+```
+
 Example:
+
+```xml
 <property name="hibernate.connection.url">
     jdbc:mysql://localhost:3306/companyDB
 </property>
@@ -70,19 +81,26 @@ Example:
 <property name="hibernate.connection.password">
     YOUR_PASSWORD
 </property>
+```
 
 ### Run the Application
 
-1. Run the following Java class: EmployeeManagement.java
+Run the following Java class:
+
+```text
+EmployeeManagement.java
+```
 
 In the console, the application provides us with options to add, view, update, and delete employees.
 
 ## Hibernate Operations
 
-1. Create -> persist() 
-2. Read -> find() 
-3. Update -> setXXX() + commit() 
-4. Delete -> remove() 
+| Operation | Hibernate Method |
+|---|---|
+| Create | `persist()` |
+| Read | `find()` |
+| Update | `setXXX()` + `commit()` |
+| Delete | `remove()` |
 
 ## Concepts Practiced
 
@@ -95,3 +113,5 @@ In the console, the application provides us with options to add, view, update, a
 - Dirty Checking
 - MySQL Integration
 - Maven
+
+## Future Improvement
